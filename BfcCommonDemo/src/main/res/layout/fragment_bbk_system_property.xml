@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="is junior: "
+            />
+
+        <TextView
+            android:id="@+id/tv_is_junior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="小学字段系统标识, 1 代表是junior"/>
+
+    <include layout="@layout/separator_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="是否开启的护眼模式: "
+            />
+
+        <TextView
+            android:id="@+id/tv_is_eye_protect_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_open_eye_protect_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开护眼模式"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btn_close_eye_protect_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="关闭护眼模式"
+        android:visibility="gone"/>
+</LinearLayout>

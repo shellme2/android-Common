@@ -1,0 +1,86 @@
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <EditText
+                android:id="@+id/et_year"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:hint="输入年份"
+                android:inputType="number"
+                android:maxLength="5"
+                android:text="2016"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="是否是闰年"
+                />
+
+            <TextView
+                android:id="@+id/tv_is_yeap_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <include layout="@layout/separator_line"/>
+
+        <include layout="@layout/separator_line"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="日期格式化,选择格式,格式化当前时间\ny表示年 M月, d月份中的天, E星期中的天, H小时数, m分钟数, s分钟中的秒 \n具体的格式化形式,参考simpleDateFormate中的定义\n"
+            />
+
+        <TextView
+            android:id="@+id/tv_date_formate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"/>
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/sp_date_format"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_date_format"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="输入日期格式"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

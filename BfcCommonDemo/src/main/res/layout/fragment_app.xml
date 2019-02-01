@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前app包名: "
+                />
+
+            <TextView
+                android:id="@+id/app_package_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <include layout="@layout/separator_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前app名称: "
+                />
+
+            <TextView
+                android:id="@+id/app_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <include layout="@layout/separator_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前app版本名: "
+                />
+
+            <TextView
+                android:id="@+id/app_version_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <include layout="@layout/separator_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前app版本号: "
+                />
+
+            <TextView
+                android:id="@+id/app_version_code_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <include layout="@layout/separator_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前app签名: "
+                />
+
+            <TextView
+                android:id="@+id/app_signature_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <include layout="@layout/separator_line"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/app_package_name_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="根据指定包名,查询相关信息"
+                android:text="com.eebbk.bfc.bfclog_demo"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="指定的app名称: "
+                />
+
+            <TextView
+                android:id="@+id/app_specify_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="指定的app版本名: "
+                />
+
+            <TextView
+                android:id="@+id/app_specify_version_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <include layout="@layout/separator_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="指定的app版本号: "
+                />
+
+            <TextView
+                android:id="@+id/app_specify_version_code_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <include layout="@layout/separator_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="指定的app签名: "
+                />
+
+            <TextView
+                android:id="@+id/app_specify_signature_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <include layout="@layout/separator_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="指定的app是否安装: "
+                />
+
+            <TextView
+                android:id="@+id/app_specify_exist_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <include layout="@layout/separator_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="指定的app是否为系统app: "
+                />
+
+            <TextView
+                android:id="@+id/app_specify_is_system_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <include layout="@layout/separator_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            >
+
+            <Button
+                android:id="@+id/uninstall_specify_app_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="卸载指定app"
+                />
+
+            <Button
+                android:id="@+id/uninstall_specify_app_silence_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="静默卸载"
+                android:visibility="gone"
+                />
+
+            <Button
+                android:id="@+id/detail_specify_app_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="app应用信息界面"
+                />
+
+            <Button
+                android:id="@+id/start_app_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="启动app"
+                />
+        </LinearLayout>
+
+        <include layout="@layout/separator_line"/>
+
+        <Button
+            android:id="@+id/hide_app_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="隐藏app"
+            android:visibility="gone"
+            />
+
+        <include layout="@layout/separator_line"/>
+
+        <Button
+            android:id="@+id/run_monkey_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="monkey"
+            android:visibility="gone"
+            />
+
+        <include layout="@layout/separator_line"/>
+
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

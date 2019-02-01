@@ -1,0 +1,48 @@
+apply plugin: 'com.android.library'
+
+def gitHead = 'git rev-parse --short HEAD'.execute([], project.rootDir).text.trim()
+def gitTag = 'git describe --tags'.execute([], project.rootDir).text.trim()
+def buildTime = new Date().format("yyyy-MM-dd'T'HH:mm:ss'Z'", TimeZone.getTimeZone("UTC"))
+
+android {
+
+    compileSdkVersion 26
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion bfcBuildConfig.minSdkVersion
+        targetSdkVersion bfcBuildConfig.targetSdkVersion
+
+        versionCode VERSION_CODE as int
+        versionName VERSION_NAME
+
+        buildConfigField "String", "GIT_HEAD", "\"${gitHead}\""
+        buildConfigField "String", "GIT_TAG", "\"${gitTag}\""
+        buildConfigField "String", "BUILD_TIME", "\"${buildTime}\""
+        buildConfigField "String", "LIBRARY_NAME", "\"${POM_ARTIFACT_ID}\""
+
+//        renderscriptTargetApi 18
+//        renderscriptSupportModeEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile bfcBuildConfig.deps.'support-annotations'
+
+    testCompile rootProject.ext.dependencies.'junit'
+    testCompile rootProject.ext.dependencies.'rebolectric'
+}
+
+apply from:"http://172.28.2.93/bfc/Bfc/raw/develop/common-config/maven-push.gradle"

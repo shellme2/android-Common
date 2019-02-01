@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_disable_home_key"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="禁止home键"/>
+
+    <Button
+        android:id="@+id/btn_enable_home_key"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="允许home键"/>
+
+
+    <Button
+        android:id="@+id/btn_disable_app_switch_key"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="禁止多任务切换键"/>
+
+    <Button
+        android:id="@+id/btn_enable_app_switch_key"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="允许多任务切换键"/>
+
+
+    <Button
+        android:id="@+id/btn_disable_pull_statusbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="禁止下拉通知栏"/>
+
+    <Button
+        android:id="@+id/btn_enable_pull_statusbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="允许下拉通知栏"/>
+</LinearLayout>

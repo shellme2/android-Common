@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="是否锁屏: "
+                />
+
+            <TextView
+                android:id="@+id/screen_lock_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <include layout="@layout/separator_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="频幕宽度: "
+                />
+
+            <TextView
+                android:id="@+id/screen_width_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <include layout="@layout/separator_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="频幕高度: "
+                />
+
+            <TextView
+                android:id="@+id/screen_height_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <include layout="@layout/separator_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="状态栏高度: "
+                />
+
+            <TextView
+                android:id="@+id/screen_status_bar_height_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <include layout="@layout/separator_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="是否有导航栏(NavigationBar): "/>
+
+            <TextView
+                android:id="@+id/screen_navigation_bar_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <include layout="@layout/separator_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="导航栏高度: "
+                />
+
+            <TextView
+                android:id="@+id/screen_navigation_bar_height_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="屏幕dpi: "
+                />
+
+            <TextView
+                android:id="@+id/screen_dpi_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <include layout="@layout/separator_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="像素密度: "
+                />
+
+            <TextView
+                android:id="@+id/screen_density_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <include layout="@layout/separator_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="250dp"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/dp2px_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="dp转px"
+                    android:inputType="number"
+                    android:maxLength="7"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/dp2px_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            >
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="250dp"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/px2dp_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="px转dp"
+                    android:inputType="number"
+                    android:maxLength="7"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/px2dp_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="250dp"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/sp2px_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="sp转px"
+                    android:inputType="number"
+                    android:maxLength="7"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/sp2px_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            >
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="250dp"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/px2sp_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="px转sp"
+                    android:inputType="number"
+                    android:maxLength="7"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/px2sp_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/capture_screen_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="获取屏幕截图: "
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/capture_screen_iv"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:scaleType="centerInside"
+            />
+
+
+        <SeekBar
+            android:id="@+id/screen_brightness_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="255"
+            />
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

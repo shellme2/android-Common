@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_media_player_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="播放"/>
+
+
+    <include layout="@layout/separator_line"/>
+
+    <Button
+        android:id="@+id/btn_media_player_data_byte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="加载部分数据 播放"/>
+
+    <Button
+        android:id="@+id/btn_media_player_loop_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="循环指定时间段5遍"/>
+
+    <include layout="@layout/separator_line"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="播放速率:"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_speed_0dot5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0.5"/>
+
+        <Button
+            android:id="@+id/btn_speed_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1"/>
+
+        <Button
+            android:id="@+id/btn_speed_1dot25"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1.25"/>
+
+        <Button
+            android:id="@+id/btn_speed_1dot5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1.5"/>
+
+        <Button
+            android:id="@+id/btn_speed_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="2"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/separator_line"/>
+
+    <Button
+        android:id="@+id/btn_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="test"/>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/activity_statusbar_transparent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/statusbar_bg"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_statusbar_alpha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="0"
+        />
+
+    <SeekBar
+        android:id="@+id/sb_change_alpha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="调用StatusbarUtils设置状态栏透明 或者半透明后, 布局会从状态栏下面开始布局, 也就是说状态栏会盖在布局之上;
+        如果布局中的部分view不希望被状态栏覆盖, 则需要在布局中加上fitsSystemWindows标志, 或者在布局里面, 空出状态栏高度; fitsSystemWindows标志会影响View.fitSystemWindows方法, 在各个view中表现可能不一样, 需要自行查阅"
+        />
+
+
+</LinearLayout>
